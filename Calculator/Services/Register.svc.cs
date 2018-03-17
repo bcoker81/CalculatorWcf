@@ -13,7 +13,7 @@ namespace Calculator.Services
     {
         public int AddTwoNumbers(int num1, int num2)
         {
-            throw new NotImplementedException();
+            return num1 + num2;
         }
 
         
