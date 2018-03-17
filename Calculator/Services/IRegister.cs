@@ -19,5 +19,8 @@ namespace Calculator.Services
 
         [OperationContract]
         int MultiplyTwoNumbers(int num1, int num2);
+
+        [OperationContract]
+        int DivideTwoNumbers(int num1, int num2);
     }
 }

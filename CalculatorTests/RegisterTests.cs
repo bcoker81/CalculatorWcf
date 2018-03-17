@@ -57,5 +57,22 @@ namespace Calculator.Services.Tests
             //assert
             Assert.That(expected, Is.EqualTo(actual));
         }
+
+        [Test]
+        public void DivideTwoNumbers_ReturnsResult()
+        {
+            //arrange
+            Register testObj = new Register();
+            int num1 = 33;
+            int num2 = 14;
+
+            //act
+            var actual = testObj.DivideTwoNumbers(num1, num2);
+            var expected = num1 / num2;
+
+            //assert
+            Assert.That(expected, Is.EqualTo(actual));
+
+        }
     }
 }
