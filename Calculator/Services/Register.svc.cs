@@ -16,12 +16,12 @@ namespace Calculator.Services
             return num1 + num2;
         }
 
-        public object SubtractTwoNumbers(int num1, int num2)
+        public int SubtractTwoNumbers(int num1, int num2)
         {
             return num1 - num2;
         }
 
-        public object MultiplyTwoNumbers(int num1, int num2)
+        public int MultiplyTwoNumbers(int num1, int num2)
         {
             return num1 * num2;
         }

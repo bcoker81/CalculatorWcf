@@ -13,5 +13,11 @@ namespace Calculator.Services
     {
         [OperationContract]
         int AddTwoNumbers(int num1, int num2);
+
+        [OperationContract]
+        int SubtractTwoNumbers(int num1, int num2);
+
+        [OperationContract]
+        int MultiplyTwoNumbers(int num1, int num2);
     }
 }
