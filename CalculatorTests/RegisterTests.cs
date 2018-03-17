@@ -25,5 +25,21 @@ namespace Calculator.Services.Tests
             //assert
             Assert.That(expected, Is.EqualTo(result));
         }
+
+        [Test]
+        public void SubtractTwoNumbers_ReturnsResult()
+        {
+            //arrange
+            Register testObj = new Register();
+            int num1 = 4;
+            int num2 = 2;
+
+            //act
+            var actual = testObj.SubtractTwoNumbers(num1, num2);
+            var expected = num1 - num2;
+
+            //assert
+            Assert.That(expected, Is.EqualTo(actual));
+        }
     }
 }
