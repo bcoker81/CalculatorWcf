@@ -30,5 +30,10 @@ namespace Calculator.Services
         {
             return num1 / num2;
         }
+
+        public object Exponent(int num1, int num2)
+        {
+            return num1 ^ num2;
+        }
     }
 }

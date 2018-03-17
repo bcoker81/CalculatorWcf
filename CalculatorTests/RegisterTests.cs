@@ -74,5 +74,21 @@ namespace Calculator.Services.Tests
             Assert.That(expected, Is.EqualTo(actual));
 
         }
+
+        [Test]
+        public void NumberWithExponent_ReturnsResult()
+        {
+            //arrange
+            Register testObj = new Register();
+            int num1 = 3;
+            int num2 = 4;
+
+            //act
+            var actual = testObj.Exponent(num1, num2);
+            var expected = num1 ^ num2;
+
+            //assert
+            Assert.That(expected, Is.EqualTo(actual));
+        }
     }
 }
