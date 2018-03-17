@@ -41,5 +41,21 @@ namespace Calculator.Services.Tests
             //assert
             Assert.That(expected, Is.EqualTo(actual));
         }
+
+        [Test]
+        public void MultiplyTwoNumbers_ReturnsResult()
+        {
+            //arrange
+            Register testObj = new Register();
+            int num1 = 14;
+            int num2 = 33;
+
+            //act
+            var actual = testObj.MultiplyTwoNumbers(num1, num2);
+            var expected = num1 * num2;
+
+            //assert
+            Assert.That(expected, Is.EqualTo(actual));
+        }
     }
 }
