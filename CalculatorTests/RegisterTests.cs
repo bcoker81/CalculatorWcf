@@ -85,7 +85,7 @@ namespace Calculator.Services.Tests
 
             //act
             var actual = testObj.Exponent(num1, num2);
-            var expected = num1 ^ num2;
+            var expected = Math.Pow(num1,num2);
 
             //assert
             Assert.That(expected, Is.EqualTo(actual));
