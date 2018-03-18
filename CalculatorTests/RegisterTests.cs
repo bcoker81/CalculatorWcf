@@ -76,6 +76,22 @@ namespace Calculator.Services.Tests
         }
 
         [Test]
+        public void DivideTwoNumbers_ByZero()
+        {
+            //arrange
+            Register testObj = new Register();
+            int num1 = 13;
+            int num2 = 0;
+
+            //act
+            var actual = testObj.DivideTwoNumbers(num1, num2);
+            var expected = 0;
+
+            //assert
+            Assert.That(expected, Is.EqualTo(actual));
+        }
+
+        [Test]
         public void NumberWithExponent_ReturnsResult()
         {
             //arrange
